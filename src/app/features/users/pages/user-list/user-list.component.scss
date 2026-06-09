@@ -1,0 +1,33 @@
+.user-list {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h2 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        span {
+            color: #6b7280;
+            font-size: 0.95rem;
+            background: #f3f4f6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}

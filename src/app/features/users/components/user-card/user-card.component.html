@@ -1,1 +1,18 @@
-<p>user-card works!</p>
+<div class="user-card">
+    <div class="user-card__avatar">
+        {{ user.name.charAt(0) }}
+    </div>
+
+    <div class="user-card__content">
+        <h3 class="user-card__name">{{ user.name }}</h3>
+        <p class="user-card__username">&#64;{{ user.username }}</p>
+        <p class="user-card__email">{{ user.email }}</p>
+        <div class="user-card__details">
+            <span>📞 {{ user.phone }}</span>
+            <span>🌐 {{ user.website }}</span>
+        </div>
+        <div class="user-card__address">
+            📍 {{ user.address.city }}, {{ user.address.street }}
+        </div>
+    </div>
+</div>

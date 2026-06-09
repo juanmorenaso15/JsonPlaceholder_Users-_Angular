@@ -1,0 +1,59 @@
+.user-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #e0f2fe;
+    border-radius: 12px;
+    border: 1px solid #bae6fd;
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #0284c7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__name {
+        margin: 0 0 0.25rem 0;
+        font-size: 1.125rem;
+        color: #0f172a;
+    }
+
+    &__username {
+        margin: 0 0 0.5rem 0;
+        color: #475569;
+        font-size: 0.875rem;
+    }
+
+    &__email {
+        margin: 0 0 0.75rem 0;
+        color: #0369a1;
+        font-size: 0.875rem;
+    }
+
+    &__details {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+        color: #475569;
+    }
+
+    &__address {
+        font-size: 0.75rem;
+        color: #64748b;
+        padding-top: 0.5rem;
+        border-top: 1px solid #bae6fd;
+    }
+}
